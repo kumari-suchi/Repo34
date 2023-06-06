@@ -1,0 +1,31 @@
+:Build scaling plans in AWS that balance load on different EC2 instances
+
+Then scroll down and go to Danger Zone then click on change visibility and change to public.
+Create Launch template.
+Auto Scaling and then Auto Scaling Groups.
+
+Now under Scaling policies Choose the Target Tracking Scaling policy option.
+➢ Select the metric type as Average CPU utilization. 
+➢ Set Target Value to 50.
+➢ Set Warm-Up time to 300 seconds under Instances Need then click on next
+
+
+nano su1.sh 
+
+#!/bin/bash
+while true 
+do 
+ echo “Loop running” 
+done
+
+Ctrl+X 
+ Y
+ Enter
+chmod +x su1.sh
+• ./su1.sh 
+
+Then first delete Auto Scaling groups
+Then delete Load balancer
+Then delete Target group
+
+

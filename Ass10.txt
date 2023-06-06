@@ -1,0 +1,31 @@
+Deploy project from GitHub to EC2 by creating new security group and user data.
+
+: Next, we will add Inbound Rules. Start adding by clicking the Add rule button. 
+These include:
+a) SSH 0.0.0.0/0
+b) HTTP
+c) HTTPS
+d) Custom TCP:4000
+
+Now we go to the instances section from the left side nav bar.Now we Create a 
+new EC2 instance. Click on the Launch Instance button.
+
+#!/bin/bash
+apt-get update
+apt-get install -y nginx
+systemctl start nginx
+systemctl enable nginx
+apt-get install -y git
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+apt-get install -y nodejs
+
+click on the connect button. After this anew Tab will open with a Bash Terminal 
+that is of our remote EC2 server.
+
+git clone your GitHub Repository URL 
+your Username of GitHub will be asked.
+your account Token as your Password will be asked
+cd YourRepositoryname
+npm install
+node index.js
+

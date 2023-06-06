@@ -1,0 +1,30 @@
+Deploy a project from local machine to GitHub and viceversa
+
+Token
+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
+
+local to github
+
+git init 
+git status
+git add .
+git status
+git commit -m “done”, 
+git remote add origin path of repository file 
+git push -u origin master
+
+github to local
+
+Then create a new folder then right click on folder and then click on Git Bash here to open the 
+terminal.
+git init
+git clone https://github.com/sudip7407/New-Repo1.git 
+remove git file..rm -r .git
+
+git init
+git status
+git add .
+git status
+git commit -m “done1”
+git remote add origin path of repository file 
+git push -u origin master 

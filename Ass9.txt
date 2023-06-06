@@ -1,0 +1,34 @@
+Deploy a project from GitHub to EC2.
+
+New terminal consol
+pwd
+sudo apt-get update 
+sudo apt-get upgrade 
+sudo apt-get install nginx
+nginx -v
+curl -sl https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt install nodejs 
+node -v
+
+git clone and paste HTTPS link
+ls
+cd MyRep2
+cd new-repo1
+npm install
+
+Then click on Security .Then go to Security groups
+Then go to Inbound rules and click on Edit Inbound rules
+Then write 4000 port no. and source 0.0.0.0/0 then click on Save rules.
+
+But first we need to start our server
+node index.js
+
+Now if you want to modify your code then open index.js and modify then commit changes then
+
+➢ git pull
+(Enter the username when asked)
+(Enter your account Token as your Password when asked for password)
+(Right click once to paste, then press Enter)
+Now we have to restart the server.
+➢ node index.js
+(We restarted the server
