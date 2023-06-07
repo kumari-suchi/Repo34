@@ -17,6 +17,7 @@ terminal.
 git init
 git clone https://github.com/sudip7407/New-Repo1.git 
 remove git file..rm -r .git
+rm -r .gitignore
 
 git init
 git status
