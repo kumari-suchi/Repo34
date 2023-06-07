@@ -1,0 +1,19 @@
+Upload a static website on EC2.
+pwd
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install nginx
+
+Then click on New SFTP window
+In the remote section the Up symbol is clicked twice. The var is clicked then 
+www is clicked then html is clicked.
+
+The terminal is opened.cd .. is clicked twice.
+cd /
+cd var
+cd www
+cd html
+ls
+cd .. 
+sudo chmod 777 html 
+
