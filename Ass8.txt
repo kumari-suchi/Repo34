@@ -15,6 +15,7 @@ github to local
 Then create a new folder then right click on folder and then click on Git Bash here to open the 
 terminal.
 git init
+git status
 git clone https://github.com/sudip7407/New-Repo1.git 
 ls -A 
 rm -r .git
@@ -22,9 +23,11 @@ cd New-Repo1
 rm -r .git
 rm -r .gitignore
 ls -A
-
+cd ..
 git init
-ls -A
+git status
+cd New-Repo1
+git init 
 git status
 git config --global user.email “Your email here” 
 git config --global user.name “Your GitHub account username here”
