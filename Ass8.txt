@@ -16,11 +16,18 @@ Then create a new folder then right click on folder and then click on Git Bash h
 terminal.
 git init
 git clone https://github.com/sudip7407/New-Repo1.git 
-remove git file..rm -r .git
+ls -A 
+rm -r .git
+cd New-Repo1 
+rm -r .git
 rm -r .gitignore
+ls -A
 
 git init
+ls -A
 git status
+git config --global user.email “Your email here” 
+git config --global user.name “Your GitHub account username here”
 git add .
 git status
 git commit -m “done1”
