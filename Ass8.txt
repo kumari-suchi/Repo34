@@ -1,8 +1,5 @@
 Deploy a project from local machine to GitHub and viceversa
 
-Token
-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
-
 local to github
 
 git init 
